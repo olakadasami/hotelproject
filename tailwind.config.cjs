@@ -4,7 +4,18 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      garamond: ['EB Garamond', 'serif'],
+      montserrat: ['Montserrat', 'sans-serif'],
+    },
+    colors: {
+      light: "#fff",
+      primary: "#E5E5E5",
+      secondary: "#14274A",
+      accent: "#E0B973",
+    },
+    extend: {
+    },
   },
   plugins: [],
 }
