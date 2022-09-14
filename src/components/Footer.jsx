@@ -28,14 +28,14 @@ function Footer() {
     return (
         <footer id='footer' className='bg-secondary px-8 md:px-28 flex flex-wrap gap-10 justify-center md:justify-between items-center py-20 text-light '>
             <div className='w-68'>
-                <div className='text-start mb-4'>
+                <div className='text-start mb-2'>
                     <p className="font-bold uppercase pt-5 text-center font-garamond">
-                        <span className="block tracking-[0.3rem] text-2xl">Luxury</span>
-                        <span className="text-[10px] tracking-[0.5rem] text">hotels</span>
+                        <span className="block tracking-[0.3rem] text-xl">Luxury</span>
+                        <span className="text-[8px] tracking-[0.5rem] text">hotels</span>
                     </p>
                 </div>
 
-                <div>
+                <div className='text-sm'>
                     <p>
                         497 Evergreen Rd. Roseville, CA 95673
                     </p>

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 export function NavItem({ item }) {
     return (
-        <li className="hover:text-primary duration-200 border-b border-0 hover:vo">
+        <li className="hover:text-primary duration-200">
             <Link to={item.href}>
                 {item.title}
             </Link>
@@ -19,7 +19,7 @@ function Nav() {
         },
         {
             title: "Facilities",
-            href: "/facilites"
+            href: "/facilities"
         },
         {
             title: "Rooms",
