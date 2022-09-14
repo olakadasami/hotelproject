@@ -27,7 +27,7 @@ function Footer() {
 
     return (
         <footer id='footer' className='bg-secondary px-8 md:px-28 flex flex-wrap gap-10 justify-center md:justify-between items-center py-20 text-light '>
-            <div className='w-68'>
+            <div className='w-52'>
                 <div className='text-start mb-2'>
                     <p className="font-bold uppercase pt-5 text-center font-garamond">
                         <span className="block tracking-[0.3rem] text-xl">Luxury</span>
@@ -56,7 +56,7 @@ function Footer() {
                 ))}
             </ul>
 
-            <ul className='w-52'>
+            <ul className='w-40'>
                 {socialLinks.map((item, index) => (
                     <li key={index} className="flex mb-3 hover:text-primary cursor-pointer hover:translate-x-1 duration-200 items-center justify-start gap-4">
                         <div>

@@ -41,7 +41,7 @@ function Facilities() {
         <main >
             <Header bgImage={bgImage} />
 
-            <div className="container">
+            <div className="contain">
                 <section className='text-center mb-16'>
                     <h2 className='font-bold font-garamond text-4xl mb-6 uppercase'>
                         Facilities

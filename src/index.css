@@ -7,7 +7,7 @@
 
 
 @layer components {
-    .container {
-        @apply px-8 md:px-28 py-20;
+    .contain {
+        @apply px-8 md:px-28 py-20 w-full;
     }
 }

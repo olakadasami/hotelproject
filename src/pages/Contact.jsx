@@ -8,7 +8,7 @@ function Contact() {
             <section className='py-40 uppercase font-bold text-center text-5xl bg-secondary text-light'>
                 contact-us
             </section>
-            <div className='container'>
+            <div className='contain'>
                 <section id="text" className='mb-20'>
                     <h1 className='uppercase font-garamond mb-3 text-4xl font-bold'>
                         We are here for you

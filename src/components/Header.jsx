@@ -4,12 +4,13 @@ import Button from "./Button"
 function Header({ bgImage }) {
 
     const style = {
-        backgroundImage: bgImage
+        backgroundImage: `url(${bgImage})`
     }
 
     return (
-        <header style={style} className='bg-secondary bg-cover bg-no-repeat flex relative px-8 md:px-28 text-light h-[90vh]'>
-            <div className="my-auto">
+        <header style={style} className='bg-cover bg-fixed bg-no-repeat flex relative px-8 md:px-28 text-light h-[90vh]'>
+            <div className="absolute bg-secondary top-0 left-0 h-full w-full opacity-60"></div>
+            <div className="my-auto z-20">
                 <h1 className=" uppercase mb-6">
                     <span className="text-3xl block">welcome to</span>
                     <span className="font-garamond font-semibold text-8xl tracking-[0.5rem] my-1 block">luxury</span>

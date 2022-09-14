@@ -26,7 +26,7 @@ function Home() {
     return (
         <main>
             <Header bgImage={bgImage} />
-            <div className="container">
+            <div className="contain">
                 <p className='text-center text-lg mb-16'>
                     All our room types are including complementary breakfast
                 </p>
