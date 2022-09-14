@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaArrowCircleRight, FaRegCaretSquareLeft, FaRegCaretSquareRight } from 'react-icons/fa'
+import { FaRegCaretSquareLeft, FaRegCaretSquareRight } from 'react-icons/fa'
 
 function Testimonials() {
     return (
@@ -8,10 +8,10 @@ function Testimonials() {
                 Testimonials
             </h2>
 
-            <p className='mb-4'>
+            <p className='mb-3'>
                 "Calm, Serene, Retro - What a way to relax and enjoy"
             </p>
-            <p className='text-sm mb-4'>
+            <p className='text-sm mb-2'>
                 Mr. and Mrs. Baxter, UK
             </p>
 

@@ -3,6 +3,9 @@ import image2 from '../assets/luxuryHotels/double-room.jpg'
 import image3 from '../assets/luxuryHotels/twin-room.jpg'
 import Testimonials from '../components/Testimonials'
 import RoomItem from '../components/Rooms/RoomItem'
+import Header from '../components/Header'
+
+import bgImage from '../assets/luxuryHotels/header/rooms.png'
 
 function Rooms() {
 
@@ -25,26 +28,31 @@ function Rooms() {
     ]
 
     return (
-        <main className='py-20 px-8 md:px-28'>
+        <main>
 
-            <section className='text-center mb-16'>
-                <h2 className='font-bold font-garamond text-4xl mb-6 uppercase'>
-                    ROOMS AND RATES
-                </h2>
-                <p>
-                    Each of our bright, light-flooded rooms come with everything you could possibly need for a comfortable stay. And yes,
-                    comfort isn't our only objective, we also value good design, sleek contemporary furnishing complemented
-                    by the rich tones of nature's palette as visible from our rooms' sea-view windows and terraces.
-                </p>
-            </section>
+            <Header bgImage={bgImage} />
 
-            <section className='flex flex-col gap-20'>
-                {items.map((item, index) => {
-                    return <RoomItem key={index} item={item} />
-                })}
-            </section>
+            <div className='container'>
+                <section className='text-center mb-16 px-8'>
+                    <h2 className='font-bold font-garamond text-4xl mb-6 uppercase'>
+                        ROOMS AND RATES
+                    </h2>
+                    <p>
+                        Each of our bright, light-flooded rooms come with everything you could possibly need for a comfortable stay. And yes,
+                        comfort isn't our only objective, we also value good design, sleek contemporary furnishing complemented
+                        by the rich tones of nature's palette as visible from our rooms' sea-view windows and terraces.
+                    </p>
+                </section>
 
-            <Testimonials />
+                <section className='flex flex-col gap-20 px-8'>
+                    {items.map((item, index) => {
+                        return <RoomItem key={index} item={item} />
+                    })}
+                </section>
+
+                <Testimonials />
+            </div>
+
 
         </main>
     )

@@ -1,8 +1,11 @@
 import HomeItems from '../components/Home/HomeItems'
 import Testimonials from '../components/Testimonials'
+import Header from '../components/Header'
 
 import image1 from '../assets/luxuryHotels/home1.png'
 import image2 from '../assets/luxuryHotels/home2.png'
+
+import bgImage from '../assets/luxuryHotels/header/home.png'
 
 function Home() {
 
@@ -21,18 +24,21 @@ function Home() {
     ]
 
     return (
-        <main className='py-20 px-8 md:px-28'>
-            <p className='text-center text-lg mb-16'>
-                All our room types are including complementary breakfast
-            </p>
+        <main>
+            <Header bgImage={bgImage} />
+            <div className="container">
+                <p className='text-center text-lg mb-16'>
+                    All our room types are including complementary breakfast
+                </p>
 
-            <div className='flex flex-col mb-10 gap-12'>
-                {items.map((item, index) => (
-                    <HomeItems key={index} item={item} />
-                ))}
+                <div className='flex flex-col mb-10 gap-12'>
+                    {items.map((item, index) => (
+                        <HomeItems key={index} item={item} />
+                    ))}
+                </div>
+
+                <Testimonials />
             </div>
-
-            <Testimonials />
         </main>
     )
 }

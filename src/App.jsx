@@ -6,13 +6,13 @@ import Rooms from './pages/Rooms'
 import Contact from './pages/Contact'
 
 import Footer from './components/Footer'
-import Header from './components/Header'
+import Nav from './components/Nav'
 
 function App() {
 
   return (
-    <div className="bg-light text-secondary font-montserrat">
-      <Header />
+    <div className="bg-light relative text-secondary font-montserrat">
+      <Nav />
 
       <Routes>
         <Route path='/' element={<Home />} />
