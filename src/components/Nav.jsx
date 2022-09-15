@@ -4,7 +4,7 @@ import { useState } from "react"
 
 export function NavItem({ item }) {
     return (
-        <li className="hover:text-accent hover:border-b hover:border-accent duration-200">
+        <li className="hover:text-accent hover:outline-b hover:outline-accent duration-200">
             <Link to={item.href}>
                 {item.title}
             </Link>
