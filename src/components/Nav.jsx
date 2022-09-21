@@ -60,7 +60,7 @@ function Nav() {
                 <FaBars size={24} />
             </div>
 
-            <div className={`${nav ? "left-0" : "-left-full"} w-full duration-200 md:hidden fixed h-[90vh] top-0 bg-secondary text-light uppercase font-semibold`}>
+            <div className={`${nav ? "right-0" : "-right-full"} w-full duration-200 md:hidden fixed h-[90vh] top-0 bg-secondary text-light uppercase font-semibold`}>
 
                 <div className="relative pt-20 flex">
 

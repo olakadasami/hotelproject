@@ -9,7 +9,6 @@ import Footer from './components/Footer'
 import Nav from './components/Nav'
 
 function App() {
-
   return (
     <div className="bg-light relative text-secondary font-montserrat">
       <Nav />

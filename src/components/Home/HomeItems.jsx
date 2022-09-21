@@ -5,7 +5,7 @@ function HomeItems({ item }) {
 
     return (
         <section className='flex flex-col items-center lg:justify-between lg:flex-row gap-6 '>
-            <div className='lg:border-l px-8 border-secondary lg:w-1/3'>
+            <div className='lg:border-l lg:px-8 border-secondary lg:w-1/3'>
                 <h2 className='mb-4 text-3xl font-bold font-garamond'>
                     {item.heading}
                 </h2>

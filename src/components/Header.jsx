@@ -8,7 +8,7 @@ function Header({ bgImage }) {
     }
 
     return (
-        <header style={style} className='bg-cover bg-fixed bg-no-repeat flex relative px-8 sm:px-16 md:px-28 text-light h-[90vh]'>
+        <header id="header" style={style} className='bg-cover bg-center bg-fixed bg-no-repeat flex relative px-8 sm:px-16 md:px-28 text-light h-[90vh]'>
             <div className="absolute bg-secondary top-0 left-0 h-full w-full opacity-60"></div>
             <div className="my-auto z-20">
                 <h1 className="uppercase mb-4">
