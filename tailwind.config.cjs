@@ -8,13 +8,13 @@ module.exports = {
       garamond: ['EB Garamond', 'serif'],
       montserrat: ['Montserrat', 'sans-serif'],
     },
-    colors: {
-      light: "#fff",
-      primary: "#E5E5E5",
-      secondary: "#14274A",
-      accent: "#E0B973",
-    },
     extend: {
+      colors: {
+        light: "#fff",
+        primary: "#E5E5E5",
+        secondary: "#14274A",
+        accent: "#E0B973",
+      },
     },
   },
   plugins: [],

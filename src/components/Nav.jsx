@@ -1,13 +1,15 @@
 import { FaBars, FaTimes } from "react-icons/fa"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import { useState } from "react"
 
-export function NavItem({ item }) {
+export function NavItem({ item, toogleNav }) {
     return (
-        <li className="hover:text-accent hover:outline-b hover:outline-accent duration-200">
-            <Link to={item.href}>
+        <li onClick={toogleNav}>
+            <NavLink to={item.href}
+                className={({ isActive }) => (`${isActive ? "text-accent border-b border-accent" : ""} hover:text-accent duration-200`)}
+            >
                 {item.title}
-            </Link>
+            </NavLink>
         </li>
     )
 }
@@ -41,10 +43,10 @@ function Nav() {
 
     return (
         <nav className="flex absolute z-50 w-full top-0 text-light items-center justify-between h-24 px-6 md:px-20 lg:px-28">
-            <div className="bg-accent rounded-[2rem] rounded-t-none text-secondary w-52 h-full">
+            <div className="bg-accent rounded-[2rem] rounded-t-none text-secondary w-44 h-full">
                 <p className="font-bold uppercase pt-5 text-center font-garamond">
                     <span className="block tracking-[0.3rem] text-2xl">Luxury</span>
-                    <span className="text-[10px] tracking-[0.5rem] text">hotels</span>
+                    <span className="text-[10px] tracking-[0.3rem] text">hotels</span>
                 </p>
             </div>
 
@@ -66,9 +68,9 @@ function Nav() {
                         <FaTimes size={24} />
                     </div>
 
-                    <ul className="flex relative w-full flex-col justify-center items-center gap-4">
+                    <ul className="flex relative w-full flex-col justify-center items-center gap-10">
                         {items.map((item, index) => (
-                            <NavItem key={index} item={item} />
+                            <NavItem key={index} toogleNav={toogleNav} item={item} />
                         ))}
                     </ul>
                 </div>
