@@ -48,7 +48,7 @@ function Footer() {
                 </div>
             </div>
 
-            <ul className='w-40'>
+            <ul className='w-40 text-center'>
                 {links.map((item, index) => (
                     <li key={index} className='cursor-pointer mb-3 hover:translate-x-1 duration-200 hover:text-primary'>
                         {item}
@@ -69,7 +69,7 @@ function Footer() {
                 ))}
             </ul>
 
-            <form className='w-60'>
+            <form className='md:w-60'>
                 <label className='block font-semibold mb-6' htmlFor="subscribe">
                     Subscribe to our newsletter
                 </label>

@@ -28,12 +28,12 @@ function Rooms() {
     ]
 
     return (
-        <main>
+        <>
 
             <Header bgImage={bgImage} />
 
-            <div className='contain'>
-                <section className='text-center mb-16 px-8'>
+            <main className='contain'>
+                <section className='text-center mb-16'>
                     <h2 className='font-bold font-garamond text-4xl mb-6 uppercase'>
                         ROOMS AND RATES
                     </h2>
@@ -44,17 +44,17 @@ function Rooms() {
                     </p>
                 </section>
 
-                <section className='flex flex-col gap-20 px-8'>
+                <section className='flex flex-col gap-20'>
                     {items.map((item, index) => {
                         return <RoomItem key={index} item={item} />
                     })}
                 </section>
 
                 <Testimonials />
-            </div>
+            </main>
 
 
-        </main>
+        </>
     )
 }
 
